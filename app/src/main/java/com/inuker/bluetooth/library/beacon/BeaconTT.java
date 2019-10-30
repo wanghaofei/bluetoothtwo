@@ -8,13 +8,13 @@ import java.util.List;
 /**
  * Created by dingjikerbo on 2016/9/5.
  */
-public class Beacon {
+public class BeaconTT {
 
     public byte[] mBytes;
 
     public List<BeaconItem> mItems;
 
-    public Beacon(byte[] scanRecord) {
+    public BeaconTT(byte[] scanRecord) {
         mItems = new LinkedList<BeaconItem>();
         if (!ByteUtils.isEmpty(scanRecord)) {
             mBytes = ByteUtils.trimLast(scanRecord);
